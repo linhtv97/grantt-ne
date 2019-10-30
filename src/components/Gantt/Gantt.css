@@ -1,0 +1,41 @@
+.smf.production-gantt{
+  height:calc(100vh - 40px - 200px);
+}
+.smf.production-gantt.delay {
+  background-color: #eb7070;
+  height: 55px;
+}
+.smf.production-gantt.in_progress {
+  background-color: #5ca0d3;
+}
+.smf.production-gantt.done {
+  background-color: #42b883;
+}
+.smf.production-gantt .gantt_task_content {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 18px;
+}
+.smf.production-gantt .gantt_task_left_button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: 0.2;
+  background-color: #000000;
+}
+.smf.production-gantt .gantt_task_right_button {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  opacity: 0.2;
+  background-color: #000000;
+}
+
+.gantt_task_line.gantt_bar_task {
+  left: 70px;
+  top: 2px;
+  height: 30px;
+  line-height: 30px;
+  width: 770px;
+  border-radius: 18px;
+}
