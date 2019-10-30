@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Gantt from './components/Gantt';
 import Toolbar from './components/Toolbar';
-import MessageArea from './components/MessageArea';
 import './App.css';
 import { STATUS_DELAYED, STATUS_DONE, STATUS_INPROGRESS } from './lineStatus';
 
@@ -77,9 +76,6 @@ class App extends Component {
                 onDataUpdated={this.logDataUpdate}
             />
           </div>
-          <MessageArea
-              messages={messages}
-          />
         </div>
     );
   }
