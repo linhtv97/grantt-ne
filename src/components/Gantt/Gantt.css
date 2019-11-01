@@ -39,3 +39,8 @@
   width: 770px;
   border-radius: 18px;
 }
+
+.gantt_task_progress {
+  opacity: 0.2;
+  background-color: #000000;
+}

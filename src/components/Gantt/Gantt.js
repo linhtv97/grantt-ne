@@ -54,6 +54,10 @@ export default class Gantt extends Component {
                     break;
             }
         };
+        gantt.templates.progress_text = function(start, end, task){
+            return "<span style='text-align:left;'>"+Math.round(task.progress*100)+ "%  </span>";
+        };
+
         gantt.templates.task_text = (start, end, task) => {
             return `
                 <div class="gantt_task_left_button"><img src="/arrow-point-to-left.svg"></div>
@@ -61,6 +65,7 @@ export default class Gantt extends Component {
                 <div class="gantt_task_right_button"><img src="/arrow-point-to-right.svg"></div>
             `
         };
+
     }
 
     initGanttDataProcessor() {
@@ -86,6 +91,7 @@ export default class Gantt extends Component {
     componentDidMount() {
         gantt.config.xml_date = "%Y-%m-%d %H:%i";
         gantt.config.show_grid = false;
+        gantt.config.open_slipt_tasks = true;
         const {tasks} = this.props;
         gantt.init(this.ganttContainer);
         this.initGanttDataProcessor();

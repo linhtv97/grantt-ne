@@ -11,7 +11,7 @@ class MessageArea extends Component {
         <h3>Messages:</h3>
         <ul>
           {messages}
-        </ul>git remote add origin git@github.com:linhtv97/grantt-editor.git
+        </ul>
       </div>
     );
   }
